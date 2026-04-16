@@ -1,0 +1,13 @@
+{
+  "name": "shulker-marketplace",
+  "owner": {
+    "name": "grapgrap"
+  },
+  "plugins": [
+    {
+      "name": "shulker",
+      "description": "개인 맥락을 세션을 넘어 축적하고 재사용하는 마크다운 기반 저장소.",
+      "source": "./"
+    }
+  ]
+}
