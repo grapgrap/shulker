@@ -4,7 +4,7 @@
 
 shulker의 스킬 구성을 검토하면서 CODE(Capture/Organize/Distill/Express) 기법을 참조했다. 초기에는 daily/weekly를 문서 유형으로 간주했으나, 이들은 문서가 아닌 스킬(동작)임이 확인되었다. daily는 현재 활성 문서의 맥락을 로드하는 렌즈이고, weekly는 세션 간 패턴을 발굴하는 분석이다.
 
-CODE의 네 단계와 사용자의 실제 사용 시점을 대조한 결과, Express는 기록 행위 자체에 포함되고 Organize는 사후 정제에 포함되어 별도 스킬이 불필요했다. 모든 사용 시점이 recall -> digest 파이프라인을 따른다.
+CODE의 네 단계와 사용자의 실제 사용 시점을 대조한 결과, Express는 shulker 범위 밖(노션 등 외부 시스템으로의 전달은 MCP가 담당)이고, Organize와 Distill은 사후 정제/증류에 포함되어 별도 스킬이 불필요했다. 모든 사용 시점이 recall -> digest 파이프라인을 따른다.
 
 ## 결정
 
@@ -20,8 +20,8 @@ CODE의 네 단계와 사용자의 실제 사용 시점을 대조한 결과, Exp
 
 ### 전제 조건
 
-- log가 Express를 흡수한다: 기록 행위 자체가 문서로의 표현이므로 별도 Express 스킬이 불필요하다
-- digest가 Organize와 Distill을 흡수한다: 분류, 정제, 패턴 발견이 동일한 맥락에서 수행된다
+- Express는 shulker의 범위 밖이다: 산출물을 노션, 슬랙 등 외부 시스템에 전달하는 것은 사용자의 MCP 설정이 담당한다. digest는 산출물을 생성하지만, 그것을 외부에 표현하는 것은 shulker의 책임이 아니다
+- digest가 Organize와 Distill을 흡수한다: 관계 정리(Organize)와 핵심 증류(Distill)가 동일한 맥락에서 수행된다
 
 ## 대안
 
